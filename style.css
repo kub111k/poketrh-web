@@ -1,0 +1,111 @@
+body {
+    background-color: #fefeff; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #333333; 
+}
+
+h1 {
+    color: #ff0000;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    text-shadow: 2px 2px 0px #ffde00; 
+}
+
+h2, h3 {
+    color: #3b4cca;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar {
+    border-bottom: 3px solid #e3350d; /* Červená linka pod černým menu pro styl */
+}
+
+.bg-dark {
+    background-color: #3b4cca !important; 
+}
+
+.navbar {
+    border-bottom: 5px solid #ffde00; 
+}
+
+
+
+.navbar-brand {
+    color: #ffde00 !important; 
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0px #cc0000; 
+    
+}
+.navbar-brand:hover{
+    text-decoration:none !important;
+}
+
+
+/* --- EFEKTY PRO POKÉMON KARTY --- */
+.galerie-nahled img, 
+.popular-cards img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; 
+    border-radius: 10px;
+    border: 5px solid #ffde00; 
+}
+
+.galerie-nahled img:hover, 
+.popular-cards img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(59, 76, 202, 0.4) !important; 
+    cursor: pointer;
+    border-color: #cc0000; 
+}
+
+a {
+    color: #3b4cca; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #cc0000;
+    text-decoration:none;
+}
+
+footer.bg-dark {
+    background-color: #cc0000 !important; 
+    border-top: 5px solid #ffde00; 
+    color: white;
+}
+
+/* --- SPECIFICKÝ VZHLED PRO TRŽIŠTĚ --- */
+
+
+.market-card {
+    background-color: #fffafb; 
+    border: 1px solid #f5c6cb; 
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.market-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    border-color: #ff0000;
+}
+
+
+.market-img {
+    width: 200px; 
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+
+.market-card h4 {
+    font-size: 1.2rem;
+    color: #333;
+    text-shadow: none; 
+}
+

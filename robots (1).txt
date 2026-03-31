@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://sweetsies.osu-vyuka.cz/sitemap.xml

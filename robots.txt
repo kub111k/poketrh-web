@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://poketrh.euweb.cz/sitemap.xml
