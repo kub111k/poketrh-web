@@ -18,7 +18,7 @@ $(document).ready(function() {
                 <img src="${velkyObrazekUrl}" style="max-width: 90%; max-height: 90%; border: 5px solid white; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
                 <span style="position: absolute; top: 20px; right: 40px; color: white; font-size: 50px; font-weight: bold;">&times;</span>
             </div>
-        `;
+            `;
 
         // 4. Přidáme toto okno na konec stránky, aby se zobrazilo
         $('body').append(lightboxHtml);
@@ -28,6 +28,19 @@ $(document).ready(function() {
     $('body').on('click', '#moje-vyskakovaci-okno', function() {
         // Okno se celé vymaže a zmizí
         $(this).remove(); 
+    });
+
+    // Načtení patičky
+    $("#sablona-paticka").load("sablony/paticka.html");
+
+    // Načtení menu a chytré nastavení třídy 'active'
+    $("#sablona-menu").load("sablony/menu.html", function() {
+        // Zjistí, na jaké stránce uživatel zrovna je (např. 'trziste.html')
+        let aktualniStranka = window.location.pathname.split('/').pop();
+        if (aktualniStranka === "") aktualniStranka = "index.html"; // Pokud je to jen hlavní doména
+        
+        // Najde v načteném menu odkaz s touto adresou a přidá mu třídu 'active'
+        $('.nav-link[href="' + aktualniStranka + '"]').addClass('active');
     });
 
 });

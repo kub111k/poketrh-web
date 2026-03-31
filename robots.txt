@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://poketrh.euweb.cz/sitemap.xml
+Sitemap: https://poketrh-web.vercel.app/sitemap.xml
